@@ -1,0 +1,2 @@
+# FruitsProject
+ mongoDB starter project
