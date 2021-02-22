@@ -9,6 +9,7 @@ const fruitSchema = new mongoose.Schema({
     review: String
 });
 
+
 const Fruit = mongoose.model("Fruit", fruitSchema);
 
 const fruit = new Fruit({
@@ -17,9 +18,20 @@ const fruit = new Fruit({
   review: "Pretty solid as a fruit."
 });
 
-fruit.save()
+// fruit.save()
 
+const personSchema = new mongoose.Schema({
+    name: String,
+    age: Number,
+});
 
+const newPerson = mongoose.model("Person", personSchema);
+
+const person = new newPerson({
+  name: "John",
+  age: 37
+});
+person.save();
 
 
 const findDocuments = function(db, callback) {
