@@ -38,7 +38,7 @@ const person = new newPerson({
   name: "John",
   age: 37
 });
-// person.save();
+ //person.save();
 
 
 Fruit.find(function(err, fruits){
@@ -54,10 +54,18 @@ Fruit.find(function(err, fruits){
   }
 })
 
-Fruit.updateOne({_id:"603479159c844814e8d74088"}, {name:"Peach"}, function(err){
-  if(err){
-    console.log(err);
-  }else{
-    console.log("Succesfully updated the document");
-  }
-});
+// Fruit.updateOne({_id:"603479159c844814e8d74088"}, {name:"Peach"}, function(err){
+//   if(err){
+//     console.log(err);
+//   }else{
+//     console.log("Succesfully updated the document");
+//   }
+// });
+//
+// Fruit.deleteOne({name:"Peach"},function(err){
+//   if(err){
+//     console.log(err);
+//   }else{
+//     console.log("Succesfully delete the document");
+//   }
+// });
