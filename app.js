@@ -69,3 +69,11 @@ Fruit.find(function(err, fruits){
 //     console.log("Succesfully delete the document");
 //   }
 // });
+
+newPerson.deleteMany({name:"John"},function(err){
+  if(err){
+    console.log(err);
+  }else{
+    console.log("Succesfully delete all related the document");
+  }
+});
