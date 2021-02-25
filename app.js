@@ -53,3 +53,11 @@ Fruit.find(function(err, fruits){
     })
   }
 })
+
+Fruit.updateOne({_id:"603479159c844814e8d74088"}, {name:"Peach"}, function(err){
+  if(err){
+    console.log(err);
+  }else{
+    console.log("Succesfully updated the document");
+  }
+});
